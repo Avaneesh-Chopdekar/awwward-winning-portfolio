@@ -34,7 +34,7 @@ export default function HeroSection() {
           />
         </h1>
         <p className="text-lg sm:text-xl">
-          I&apos;m an eager software engineer with a keen interest in
+          I&apos;m an eager software developer with a keen interest in
           <WordRotate words={interestedInKeywords} className="font-semibold" />
         </p>
         <Link

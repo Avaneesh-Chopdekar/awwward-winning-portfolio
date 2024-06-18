@@ -15,10 +15,10 @@ export default function LogoOrigami() {
     <section className="flex h-72 flex-col items-center justify-center gap-12 px-4 py-24 md:flex-row">
       <LogoRolodex
         items={[
-          <LogoItem key={1} className="bg-orange-300 text-neutral-900">
+          <LogoItem key={1} className="bg-cyan-300 text-neutral-900">
             <SiReact />
           </LogoItem>,
-          <LogoItem key={2} className="bg-green-300 text-neutral-900">
+          <LogoItem key={2} className="bg-neutral-200 text-neutral-900">
             <SiNextdotjs />
           </LogoItem>,
           <LogoItem key={3} className="bg-blue-300 text-neutral-900">

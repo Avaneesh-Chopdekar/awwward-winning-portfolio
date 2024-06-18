@@ -1,7 +1,9 @@
+import HeroSection from "@/components/sections/HeroSection";
+
 export default function Home() {
   return (
-    <div className="flex flex-grow items-center">
-      <h1 className="text-5xl font-bold">Hi! I&apos;m Avaneesh</h1>
-    </div>
+    <main className="flex flex-grow flex-col">
+      <HeroSection />
+    </main>
   );
 }

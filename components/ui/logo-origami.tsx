@@ -6,7 +6,7 @@ import {
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
-  SiFramer,
+  SiReactquery,
 } from "react-icons/si";
 import { twMerge } from "tailwind-merge";
 
@@ -24,8 +24,8 @@ export default function LogoOrigami() {
           <LogoItem key={3} className="bg-blue-300 text-neutral-900">
             <SiTailwindcss />
           </LogoItem>,
-          <LogoItem key={4} className="bg-purple-300 text-neutral-900">
-            <SiFramer />
+          <LogoItem key={4} className="bg-red-300 text-neutral-900">
+            <SiReactquery />
           </LogoItem>,
           <LogoItem key={5} className="bg-white text-black">
             <SiGithub />

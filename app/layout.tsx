@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} flex min-h-svh w-full flex-col antialiased`}
+        className={`${inter.className} flex min-h-svh w-full flex-col scroll-smooth antialiased`}
       >
         {children}
       </body>

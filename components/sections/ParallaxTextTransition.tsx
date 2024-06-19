@@ -13,7 +13,7 @@ export type ParallaxTextType = {
 
 const Phrase = ({ src, name }: { src: string; name: string }) => {
   return (
-    <div className={"flex items-center gap-5 px-5"}>
+    <div className={"hidden items-center gap-5 px-5 md:flex"}>
       <p className="text-[7.5vw]">{name}</p>
       <span className="relative aspect-[4/2] h-[7.5vw] overflow-hidden rounded-full">
         <Image style={{ objectFit: "cover" }} src={src} alt="image" fill />

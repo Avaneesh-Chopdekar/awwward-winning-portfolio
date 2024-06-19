@@ -20,3 +20,23 @@ export const parallaxTextItems1: ParallaxTextType[] = [
     name: "Backend Development",
   },
 ];
+export const parallaxTextItems2: ParallaxTextType[] = [
+  {
+    direction: "left",
+    src: "/design.jpg",
+    left: "-40%",
+    name: "Design layout",
+  },
+  {
+    direction: "right",
+    src: "/document.jpg",
+    left: "-15%",
+    name: "Document steps",
+  },
+  {
+    direction: "left",
+    src: "/develop.jpg",
+    left: "-75%",
+    name: "Develop app",
+  },
+];

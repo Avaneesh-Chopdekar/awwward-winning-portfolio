@@ -5,6 +5,7 @@ import {
   parallaxTextItems2,
 } from "./constants/parallaxTextItems";
 import SkillsSection from "@/components/sections/SkillsSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <ParallaxTextTransition items={parallaxTextItems1} />
       <SkillsSection />
       <ParallaxTextTransition items={parallaxTextItems2} />
-      <div className="h-screen"></div>
+      <ProjectsSection />
     </main>
   );
 }

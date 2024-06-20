@@ -2,7 +2,7 @@ import { FAQItem } from "@/components/ui/radix-accordian";
 
 export const faqs: FAQItem[] = [
   {
-    title: "Could you please elaborate on your educational background",
+    title: "Could you please elaborate on your educational background?",
     description:
       "I am currently in my 2nd year of BCA from Tilak Maharashtra Vidyapeeth. BCA stands for Bachelor's of Computer Applications, here we are taught theory behind computer science while also prioritizing practical knowledge.",
   },

@@ -1,6 +1,7 @@
 import "./globals.css";
 import { type Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Provider as JotaiProvider } from "jotai";
 import { FooterSection } from "@/components/sections";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,8 +22,10 @@ export default function RootLayout({
       <body
         className={`${inter.className} flex min-h-svh w-full flex-col scroll-smooth antialiased`}
       >
-        {children}
-        <FooterSection />
+        <JotaiProvider>
+          {children}
+          <FooterSection />
+        </JotaiProvider>
       </body>
     </html>
   );

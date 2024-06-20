@@ -1,10 +1,9 @@
 import { HoverDevCardsType } from "@/components/ui/hover-dev-cards";
 import {
   SiAndroidstudio,
-  SiChatbot,
   SiCypress,
   SiDjango,
-  SiExcalidraw,
+  SiDocker,
   SiExpo,
   SiExpress,
   SiFastapi,
@@ -224,10 +223,10 @@ export const toolSkills: HoverDevCardsType[] = [
     icon: SiFigma,
   },
   {
-    title: "Excalidraw",
-    subtitle: "For visualizing ideas",
-    href: "https://excalidraw.com",
-    icon: SiExcalidraw,
+    title: "Docker",
+    subtitle: "For containerizing apps",
+    href: "https://docker.com",
+    icon: SiDocker,
   },
 ];
 

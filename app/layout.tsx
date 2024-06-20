@@ -1,12 +1,12 @@
-import { type Metadata } from "next";
-import Script from "next/script";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { type Metadata } from "next";
+import { Inter } from "next/font/google";
+import { FooterSection } from "@/components/sections";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Avaneesh",
+  title: "Avaneesh Chopdekar",
   description: "Personal portfolio of Avaneesh Chopdekar",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
@@ -22,6 +22,7 @@ export default function RootLayout({
         className={`${inter.className} flex min-h-svh w-full flex-col scroll-smooth antialiased`}
       >
         {children}
+        <FooterSection />
       </body>
     </html>
   );

@@ -1,12 +1,14 @@
-import HeroSection from "@/components/sections/HeroSection";
-import ParallaxTextTransition from "@/components/sections/ParallaxTextTransition";
 import {
   parallaxTextItems1,
   parallaxTextItems2,
 } from "./constants/parallaxTextItems";
-import SkillsSection from "@/components/sections/SkillsSection";
-import ProjectsSection from "@/components/sections/ProjectsSection";
-import FAQsSection from "@/components/sections/FAQsSection";
+import {
+  HeroSection,
+  ParallaxTextTransition,
+  SkillsSection,
+  ProjectsSection,
+  FAQsSection,
+} from "@/components/sections";
 
 export default function Home() {
   return (

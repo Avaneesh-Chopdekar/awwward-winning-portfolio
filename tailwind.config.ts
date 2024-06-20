@@ -19,6 +19,8 @@ const config: Config = {
       animation: {
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         slide: "slide var(--speed) ease-in-out infinite alternate",
+        slideDown: "slideDown 300ms ease-in-out",
+        slideUp: "slideUp 300ms ease-in-out",
       },
       keyframes: {
         "spin-around": {
@@ -39,6 +41,14 @@ const config: Config = {
           to: {
             transform: "translate(calc(100cqw - 100%), 0)",
           },
+        },
+        slideDown: {
+          from: { height: "0px" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        slideUp: {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0px" },
         },
       },
     },

@@ -6,6 +6,7 @@ import {
 } from "./constants/parallaxTextItems";
 import SkillsSection from "@/components/sections/SkillsSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import FAQsSection from "@/components/sections/FAQsSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <SkillsSection />
       <ParallaxTextTransition items={parallaxTextItems2} />
       <ProjectsSection />
+      <FAQsSection />
     </main>
   );
 }

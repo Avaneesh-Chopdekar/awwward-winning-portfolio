@@ -15,7 +15,7 @@ export type ProjectCardType = {
 export default function ProjectCard(props: ProjectCardType) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[24rem]">
+      <CardBody className="group/card relative h-auto w-auto rounded-lg border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[24rem]">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -35,7 +35,7 @@ export default function ProjectCard(props: ProjectCardType) {
               props.video ??
               "https://placehold.co/1280x720.mp4?text=Work%20In%20Progress&font=Roboto"
             }
-            className="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
+            className="h-60 w-full rounded-lg object-cover group-hover/card:shadow-xl"
             poster={
               props.image ??
               "https://placehold.co/1280x720.png?text=Work%20In%20Progress&font=Roboto"
@@ -53,7 +53,7 @@ export default function ProjectCard(props: ProjectCardType) {
               as={Link}
               href={props.liveUrl}
               target="_blank"
-              className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white"
+              className="rounded-md px-4 py-2 text-xs font-normal dark:text-white"
             >
               Visit Now <BiRightArrowAlt size={16} className="inline-block" />
             </CardItem>
@@ -63,7 +63,7 @@ export default function ProjectCard(props: ProjectCardType) {
             as={Link}
             href={props.githubUrl}
             target="_blank"
-            className="rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black"
+            className="rounded-md bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black"
           >
             Github
           </CardItem>

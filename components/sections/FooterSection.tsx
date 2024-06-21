@@ -27,7 +27,8 @@ export default function FooterSection() {
             >
               <social.icon
                 size={32}
-                className={`text-neutral-500 transition-colors delay-100 ease-in-out ${social.color && `hover:${social.color}`}`}
+                className={`text-neutral-500 transition-colors delay-100 ease-in-out`}
+                color={social.color}
               />
             </Link>
           </StickyIcon>

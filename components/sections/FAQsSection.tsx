@@ -1,6 +1,6 @@
 import React from "react";
 import RadixAccordion from "../ui/radix-accordian";
-import { faqs } from "@/app/constants/faqs";
+import { faqs } from "@/app/_constants/faqs";
 
 export default function FAQsSection() {
   const sectionName = "Frequently Asked Questions";

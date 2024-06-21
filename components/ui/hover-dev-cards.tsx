@@ -1,7 +1,7 @@
 "use client";
 import { IconType } from "react-icons";
 import { useAtomValue } from "jotai";
-import { tabs, skillSet } from "@/app/constants/skills";
+import { tabs, skillSet } from "@/app/_constants/skills";
 import skillAtom from "@/atoms/skillAtom";
 
 export type HoverDevCardsType = {

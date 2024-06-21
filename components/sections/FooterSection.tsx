@@ -1,6 +1,6 @@
 import React from "react";
 import { IconType } from "react-icons";
-import { socials } from "@/app/constants/socials";
+import { socials } from "@/app/_constants/socials";
 import StickyIcon from "../ui/sticky-icon";
 import Link from "next/link";
 

@@ -1,7 +1,7 @@
 import {
   parallaxTextItems1,
   parallaxTextItems2,
-} from "./constants/parallaxTextItems";
+} from "./_constants/parallaxTextItems";
 import {
   HeroSection,
   ParallaxTextTransition,

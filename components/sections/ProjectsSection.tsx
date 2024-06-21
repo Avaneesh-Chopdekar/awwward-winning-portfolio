@@ -1,7 +1,7 @@
 import React from "react";
 import TextRevealByWord from "@/components/magicui/text-reveal";
 import ProjectCard from "../project-card";
-import { projectsInfo } from "@/app/constants/projectsInfo";
+import { projectsInfo } from "@/app/_constants/projectsInfo";
 
 export default function ProjectsSection() {
   return (

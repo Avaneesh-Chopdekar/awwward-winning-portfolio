@@ -29,6 +29,7 @@ export default function StickyIcon(props: PropsWithChildren) {
       animate={{ x, y }}
       ref={containerRef}
       transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+      className="p-8"
     >
       {props.children}
     </motion.div>

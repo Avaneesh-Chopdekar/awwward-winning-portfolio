@@ -13,11 +13,11 @@ export type SocialsLinkType = {
 
 export default function FooterSection() {
   return (
-    <footer className="my-16">
-      <p className="mb-10 text-center text-lg font-semibold text-neutral-800 dark:text-neutral-300 md:mb-20 md:text-xl">
+    <footer className="my-8 md:my-4">
+      <p className="mb-10 text-center text-lg font-semibold text-neutral-800 dark:text-neutral-300 md:text-xl">
         Made by Avaneesh Chopdekar
       </p>
-      <div className="flex items-center justify-evenly gap-8">
+      <div className="flex items-center justify-evenly gap-2">
         {socials.map((social) => (
           <StickyIcon key={social.url}>
             <Link
@@ -26,8 +26,7 @@ export default function FooterSection() {
               aria-label={social.label}
             >
               <social.icon
-                size={32}
-                className={`text-neutral-500 transition-colors delay-100 ease-in-out`}
+                className={`text-2xl text-neutral-500 transition-colors delay-100 ease-in-out sm:text-3xl`}
                 color={social.color}
               />
             </Link>

@@ -36,6 +36,8 @@ export default defineConfig({
   collections: { posts },
   mdx: {
     rehypePlugins: [
+      rehypeSlug,
+      [rehypePrettyCode, { theme: "github-dark" }],
       [
         rehypeAutolinkHeadings,
         {
@@ -46,8 +48,6 @@ export default defineConfig({
           },
         },
       ],
-      [rehypePrettyCode, { theme: "github-dark" }],
-      rehypeSlug,
     ],
     remarkPlugins: [remarkGfm],
   },

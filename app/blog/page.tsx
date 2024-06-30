@@ -1,17 +1,30 @@
 "use client";
 import PostItem from "@/components/post-item";
+import { QueryPagination } from "@/components/query-pagination";
 import { sortPostsDescendingByDate } from "@/lib/utils";
 import { posts } from "@velite/content";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 
-// TODO: Replace blog title with tags for search field's placeholders
+const POSTS_PER_PAGE = 5;
 
-export default function BlogsPage() {
+type BlogsPageProps = {
+  searchParams: {
+    page?: string;
+  };
+};
+
+export default function BlogsPage({ searchParams }: BlogsPageProps) {
+  const currentPage = Number(searchParams?.page) || 1;
   const sortedPosts = sortPostsDescendingByDate(
     posts.filter((post) => post.published),
   );
-  const displayPosts = sortedPosts;
+  const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
+
+  const displayPosts = sortedPosts.slice(
+    POSTS_PER_PAGE * (currentPage - 1),
+    POSTS_PER_PAGE * currentPage,
+  );
   const [searchQuery, setSearchQuery] = useState("");
   return (
     <main className="container mx-auto max-w-4xl py-6 lg:py-10">
@@ -39,9 +52,22 @@ export default function BlogsPage() {
         </div>
       </section>
       <hr className="mt-8" />
-      {displayPosts?.length > 0 ? (
+      {displayPosts?.length > 0 && searchQuery.length === 0 ? (
         <ul className="flex flex-col">
-          {displayPosts
+          {displayPosts.map((post) => (
+            <li key={post.slug}>
+              <PostItem
+                date={post.date}
+                title={post.title}
+                slug={post.slug}
+                description={post.description ?? ""}
+              />
+            </li>
+          ))}
+        </ul>
+      ) : searchQuery.length > 0 ? (
+        <ul className="flex flex-col">
+          {sortedPosts
             .filter((post) => {
               if (searchQuery.length === 0) {
                 return post;
@@ -68,6 +94,10 @@ export default function BlogsPage() {
       ) : (
         <p>No blog posts yet.</p>
       )}
+
+      {searchQuery.length === 0 ? (
+        <QueryPagination totalPages={totalPages} className="mt-16" />
+      ) : null}
     </main>
   );
 }

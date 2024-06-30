@@ -31,7 +31,7 @@ export default async function BlogDetailPage({ params }: BlogDetailProps) {
 
   return (
     <article className="container prose mx-auto mt-2 max-w-3xl py-6 dark:prose-invert lg:prose-xl">
-      <Link href=".." className="mb-8 flex items-center gap-2 no-underline">
+      <Link href="/blog" className="mb-8 flex items-center gap-2 no-underline">
         <BiLeftArrowAlt size={22} /> Back
       </Link>
       <h1 className="mb-2">{post.title}</h1>

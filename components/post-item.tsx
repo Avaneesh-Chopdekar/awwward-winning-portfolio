@@ -23,7 +23,7 @@ export default function PostItem({
           <Link href={slug}>{title}</Link>
         </h2>
       </div>
-      <div className="max-w-none text-neutral-600 dark:text-neutral-400">
+      <div className="line-clamp-2 max-w-none text-neutral-600 dark:text-neutral-400 md:line-clamp-3">
         {description}
       </div>
       <div className="flex items-center justify-between">

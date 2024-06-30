@@ -30,7 +30,7 @@ export default async function BlogDetailPage({ params }: BlogDetailProps) {
   }
 
   return (
-    <article className="container prose mx-auto mt-2 max-w-3xl py-6 dark:prose-invert lg:prose-xl">
+    <article className="container prose mx-auto mt-2 max-w-3xl px-8 py-6 dark:prose-invert lg:prose-xl sm:px-0">
       <Link href="/blog" className="mb-8 flex items-center gap-2 no-underline">
         <BiLeftArrowAlt size={22} /> Back
       </Link>

@@ -27,7 +27,7 @@ export default function BlogsPage({ searchParams }: BlogsPageProps) {
   );
   const [searchQuery, setSearchQuery] = useState("");
   return (
-    <main className="container mx-auto max-w-4xl py-6 lg:py-10">
+    <main className="container mx-auto max-w-4xl px-8 pb-6 pt-12 sm:px-0 lg:pb-10 lg:pt-20">
       <section className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex flex-1 flex-col items-start gap-4">
           <h1 className="inline-block text-4xl font-bold lg:text-5xl">
@@ -37,7 +37,7 @@ export default function BlogsPage({ searchParams }: BlogsPageProps) {
             I occasionally blog about my experiences and insights in coding and
             productivity.
           </p>
-          <div className="[&>input]-focus:ring-2 [&>input]-focus:ring-cyan-400 flex w-1/2 items-center rounded-full bg-neutral-200 px-4 dark:bg-neutral-800">
+          <div className="flex w-full items-center rounded-full bg-neutral-200 px-4 dark:bg-neutral-800 md:w-1/2">
             <BiSearch size={20} />
             <input
               className="w-full rounded-r-full border-none bg-neutral-200 py-2 pl-2 outline-none placeholder:text-neutral-700 dark:bg-neutral-800 dark:placeholder:text-neutral-200"

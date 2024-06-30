@@ -33,7 +33,12 @@ export default function PostItem({
             <time dateTime={date}>{formatDate(date)}</time>
           </dd>
         </dl>
-        <Link href={slug} className="flex items-center hover:underline">
+        {/* Had to ignore the read more link from tab index for repetitive visits on same link */}
+        <Link
+          href={slug}
+          className="flex items-center hover:underline"
+          tabIndex={-1}
+        >
           Read More <BiRightArrowAlt />
         </Link>
       </div>

@@ -6,7 +6,7 @@ import { posts } from "@velite/content";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 
-const POSTS_PER_PAGE = 5;
+const POSTS_PER_PAGE = 5; // TODO: Make 10 when total blogs exceed 10
 
 type BlogsPageProps = {
   searchParams: {

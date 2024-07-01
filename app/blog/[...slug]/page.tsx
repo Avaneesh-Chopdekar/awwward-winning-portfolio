@@ -40,7 +40,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     authors: { name: "Avaneesh Chopdekar" },
-    // keywords: ['blog', 'coding', 'programming'],
+    keywords: ["blog", "coding", "programming"],
     openGraph: {
       title: post.title,
       description: post.description,
@@ -76,7 +76,7 @@ export default async function BlogDetailPage({ params }: BlogDetailProps) {
       <Link href="/blog" className="mb-8 flex items-center gap-2 no-underline">
         <BiLeftArrowAlt size={22} /> Back
       </Link>
-      <h1 className="mb-2">{post.title}</h1>
+      <h1 className="mb-2 hover:text-blue-500 hover:underline">{post.title}</h1>
       {post.description ? (
         <p className="mt-0 text-xl text-neutral-600 dark:text-neutral-400">
           {post.description}

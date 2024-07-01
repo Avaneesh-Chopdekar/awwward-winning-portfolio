@@ -3,10 +3,13 @@ import PostItem from "@/components/post-item";
 import { QueryPagination } from "@/components/query-pagination";
 import { sortPostsDescendingByDate } from "@/lib/utils";
 import { posts } from "@velite/content";
+import posthog from "posthog-js";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 
 const POSTS_PER_PAGE = 5; // TODO: Make 10 when total blogs exceed 10
+
+// TODO: Make this server component instead of full client component
 
 type BlogsPageProps = {
   searchParams: {
@@ -26,6 +29,7 @@ export default function BlogsPage({ searchParams }: BlogsPageProps) {
     POSTS_PER_PAGE * currentPage,
   );
   const [searchQuery, setSearchQuery] = useState("");
+
   return (
     <main className="container mx-auto max-w-4xl px-8 pb-6 pt-12 sm:px-0 lg:pb-10 lg:pt-20">
       <section className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">

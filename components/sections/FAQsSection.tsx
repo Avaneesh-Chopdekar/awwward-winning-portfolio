@@ -1,6 +1,8 @@
 import React from "react";
 import RadixAccordion from "../ui/radix-accordian";
 import { faqs } from "@/app/_constants/faqs";
+import Link from "next/link";
+import { Button } from "../ui/shadcn-button";
 
 export default function FAQsSection() {
   const sectionName = "Frequently Asked Questions";
@@ -14,6 +16,9 @@ export default function FAQsSection() {
         FAQs
       </p>
       <RadixAccordion items={faqs} />
+      <Link href="/chat" className="mb-16 mt-8">
+        <Button variant="outline">Know more about me</Button>
+      </Link>
     </section>
   );
 }

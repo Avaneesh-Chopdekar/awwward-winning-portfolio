@@ -11,7 +11,7 @@ export const socials: SocialsLinkType[] = [
   {
     label: "LinkedIn",
     icon: SiLinkedin,
-    url: "https://www.linkedin.com/in/avaneesh-chopdekar-9a7b59314",
+    url: "https://www.linkedin.com/in/avaneesh-chopdekar",
     color: "dodgerblue",
   },
   {

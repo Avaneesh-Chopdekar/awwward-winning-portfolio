@@ -1,12 +1,10 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { navLinks } from "./navLinks";
-import { containerVariants, linkVariants, menuVariants } from "./variants";
-
-// TODO: Add hover.dev reveal links later
+import { containerVariants, menuVariants } from "./variants";
+import { FlipLink } from "./flip-link";
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
@@ -47,21 +45,9 @@ export default function Menu() {
               >
                 {navLinks.map((link) => (
                   <li key={link.href} className="overflow-hidden">
-                    <motion.div
-                      variants={linkVariants}
-                      className="text-4xl uppercase text-black"
-                    >
-                      <Link
-                        href={link.href}
-                        onClick={() => {
-                          setTimeout(() => {
-                            toggleMenu();
-                          }, 500);
-                        }}
-                      >
-                        {link.title}
-                      </Link>
-                    </motion.div>
+                    <FlipLink href={link.href} onClick={toggleMenu}>
+                      {link.title}
+                    </FlipLink>
                   </li>
                 ))}
               </motion.ul>
@@ -71,4 +57,22 @@ export default function Menu() {
       </AnimatePresence>
     </div>
   );
+}
+
+{
+  /* Previous link component
+    <motion.div
+      variants={linkVariants}
+    >
+      <Link
+        href={link.href}
+        onClick={() => {
+          setTimeout(() => {
+            toggleMenu();
+          }, 500);
+        }}
+      >
+        {link.title}
+      </Link>
+    </motion.div> */
 }

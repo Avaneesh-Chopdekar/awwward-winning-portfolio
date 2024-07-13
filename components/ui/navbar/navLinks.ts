@@ -5,15 +5,15 @@ export type NavLinkType = {
 
 export const navLinks: NavLinkType[] = [
   {
-    title: "Home",
+    title: "One",
     href: "/",
   },
   {
-    title: "Blog",
+    title: "Two",
     href: "/blog",
   },
   {
-    title: "Chat",
+    title: "Three",
     href: "/chat",
   },
   // {
@@ -21,7 +21,7 @@ export const navLinks: NavLinkType[] = [
   //   href: "/games",
   // },
   {
-    title: "Resume",
+    title: "Four",
     href: "https://www.google.com/",
   },
 ];

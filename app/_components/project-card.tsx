@@ -46,7 +46,7 @@ export default function ProjectCard(props: ProjectCardType) {
           />
         </CardItem>
         <div className="mt-20 flex items-center justify-between">
-          {props.liveUrl && (
+          {props.liveUrl ? (
             <CardItem
               translateZ={20}
               as={Link}
@@ -56,7 +56,7 @@ export default function ProjectCard(props: ProjectCardType) {
             >
               Visit Now <BiRightArrowAlt size={16} className="inline-block" />
             </CardItem>
-          )}
+          ) : null}
           <CardItem
             translateZ={20}
             as={Link}

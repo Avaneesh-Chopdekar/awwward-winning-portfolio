@@ -43,13 +43,13 @@ const Chip = ({
       } relative rounded-md px-2.5 py-0.5 transition-colors sm:text-xl`}
     >
       <span className="relative z-10">{text}</span>
-      {isSelected && (
+      {isSelected ? (
         <motion.span
           layoutId="pill-tab"
           transition={{ type: "spring", duration: 0.5 }}
           className="absolute inset-0 z-0 rounded-md bg-gradient-to-r from-violet-600 to-indigo-600"
         ></motion.span>
-      )}
+      ) : null}
     </button>
   );
 };

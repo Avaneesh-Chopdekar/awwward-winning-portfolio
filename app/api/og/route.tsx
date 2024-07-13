@@ -32,7 +32,7 @@ export async function GET(req: NextRequest) {
               BLOG POST
             </div>
             <div tw="flex text-[80px] font-bold text-[50px]">{title}</div>
-            {description && description?.length > 0 ? (
+            {description && description.length > 0 ? (
               <div tw="flex line-clamp-3 text-neutral-500 mt-4 text-2xl">
                 {description}
               </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import RadixAccordion from "../ui/radix-accordian";
+import RadixAccordion from "../radix-accordian";
 import { faqs } from "@/app/_constants/faqs";
 import Link from "next/link";
 import { Button } from "../../../components/ui/shadcn-button";

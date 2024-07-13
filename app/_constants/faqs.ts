@@ -1,4 +1,4 @@
-import { FAQItem } from "@/components/ui/radix-accordian";
+import { FAQItem } from "../_components/radix-accordian";
 
 export const faqs: FAQItem[] = [
   {

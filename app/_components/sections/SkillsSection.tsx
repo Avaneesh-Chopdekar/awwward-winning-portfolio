@@ -1,6 +1,6 @@
 import React from "react";
-import HoverDevCards from "@/components/ui/hover-dev-cards";
-import ChipTabs from "@/components/ui/chip-tabs";
+import HoverDevCards from "../hover-dev-cards";
+import ChipTabs from "../chip-tabs";
 import { tabs } from "@/app/_constants/skills";
 
 export default function SkillsSection() {

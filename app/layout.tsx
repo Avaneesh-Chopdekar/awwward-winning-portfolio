@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import Providers from "./providers";
+import { keywords } from "./_constants/keywords";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,6 +14,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Avaneesh Chopdekar",
   description: "Personal portfolio of Avaneesh Chopdekar",
+  keywords: keywords,
+  // twitter
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import ShimmerButton from "@/components/magicui/shimmer-button";
 import SparklesText from "@/components/magicui/sparkles-text";
-import LogoOrigami from "@/components/ui/logo-origami";
+import LogoOrigami from "../logo-origami";
 
 const WordRotate = dynamic(() => import("@/components/magicui/word-rotate"), {
   ssr: false,

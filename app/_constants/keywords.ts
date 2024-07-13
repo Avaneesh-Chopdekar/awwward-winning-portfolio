@@ -1,0 +1,18 @@
+export const keywords = [
+  "Avaneesh",
+  "Chopdekar",
+  "software development",
+  "software engineer",
+  "fullstack",
+  "backend",
+  "frontend",
+  "mobile apps",
+  "javascript",
+  "python",
+  "web",
+  "android",
+  "react",
+  "react native",
+  "flutter",
+  "next.js",
+];

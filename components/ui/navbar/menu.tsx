@@ -84,7 +84,7 @@ export default function Menu() {
     <div>
       <button
         onClick={toggleMenu}
-        className="cursor-pointer rounded-full bg-yellow-400 px-4 py-1 text-lg text-black"
+        className="cursor-pointer rounded-full bg-yellow-400 px-4 py-1 font-semibold uppercase text-black sm:px-8 sm:py-2"
       >
         Menu
       </button>
@@ -95,11 +95,11 @@ export default function Menu() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 h-svh w-full origin-top bg-yellow-400 p-10 text-black"
+            className="fixed left-0 top-0 h-dvh w-full origin-top bg-yellow-400 p-10 text-black"
           >
             <div className="flex h-full flex-col">
               <button
-                className="absolute right-8 top-9 cursor-pointer px-4 text-lg text-black"
+                className="absolute right-8 top-9 cursor-pointer px-4 py-1 font-semibold uppercase text-black sm:px-8"
                 onClick={toggleMenu}
               >
                 Close

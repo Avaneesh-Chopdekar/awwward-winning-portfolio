@@ -3,7 +3,6 @@ import PostItem from "@/components/post-item";
 import { QueryPagination } from "@/components/query-pagination";
 import { sortPostsDescendingByDate } from "@/lib/utils";
 import { posts } from "@velite/content";
-import posthog from "posthog-js";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 
@@ -31,7 +30,7 @@ export default function BlogsPage({ searchParams }: BlogsPageProps) {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <main className="container mx-auto max-w-4xl px-8 pb-6 pt-12 sm:px-0 lg:pb-10 lg:pt-20">
+    <main className="container mx-auto mt-8 max-w-4xl px-8 pb-6 pt-12 sm:px-0 md:mt-0 lg:pb-10 lg:pt-20">
       <section className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex flex-1 flex-col items-start gap-4">
           <h1 className="inline-block text-4xl font-bold lg:text-5xl">

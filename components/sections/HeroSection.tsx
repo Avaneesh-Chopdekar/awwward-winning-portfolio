@@ -21,7 +21,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <main className="flex h-screen flex-grow flex-col-reverse items-center justify-end md:flex-row md:items-center md:justify-around">
+    <main className="mt-8 flex h-screen flex-grow flex-col-reverse items-center justify-end md:mt-0 md:flex-row md:items-center md:justify-around">
       <div className="mx-8 flex flex-col items-start justify-center">
         <h1 className="text-4xl font-bold sm:text-6xl">
           Hi! I&apos;m{" "}

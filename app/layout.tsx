@@ -5,7 +5,10 @@ import { FooterSection } from "@/components/sections";
 import Navbar from "@/components/ui/navbar";
 import Providers from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Avaneesh Chopdekar",

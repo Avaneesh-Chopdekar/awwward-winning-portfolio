@@ -1,4 +1,4 @@
-import { ParallaxTextType } from "@/components/sections/ParallaxTextTransition";
+import { ParallaxTextType } from "../_components/sections/ParallaxTextTransition";
 
 export const parallaxTextItems1: ParallaxTextType[] = [
   {

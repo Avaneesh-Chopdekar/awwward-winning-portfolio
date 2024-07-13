@@ -1,10 +1,11 @@
 "use client";
-import PostItem from "@/components/post-item";
-import { QueryPagination } from "@/components/query-pagination";
-import { sortPostsDescendingByDate } from "@/lib/utils";
-import { posts } from "@velite/content";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
+
+import { posts } from "@velite/content";
+import { sortPostsDescendingByDate } from "@/lib/utils";
+import PostItem from "./_components/post-item";
+import { QueryPagination } from "./_components/query-pagination";
 
 const POSTS_PER_PAGE = 5; // TODO: Make 10 when total blogs exceed 10
 

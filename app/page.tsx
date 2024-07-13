@@ -8,7 +8,7 @@ import {
   SkillsSection,
   ProjectsSection,
   FAQsSection,
-} from "@/components/sections";
+} from "@/app/_components/sections";
 
 export default function Home() {
   return (

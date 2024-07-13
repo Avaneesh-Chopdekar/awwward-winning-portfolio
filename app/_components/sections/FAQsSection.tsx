@@ -2,7 +2,7 @@ import React from "react";
 import RadixAccordion from "../ui/radix-accordian";
 import { faqs } from "@/app/_constants/faqs";
 import Link from "next/link";
-import { Button } from "../ui/shadcn-button";
+import { Button } from "../../../components/ui/shadcn-button";
 
 export default function FAQsSection() {
   const sectionName = "Frequently Asked Questions";

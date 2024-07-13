@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CardBody, CardItem, CardContainer } from "@/components/ui/3d-card";
 import { BiRightArrowAlt } from "react-icons/bi";

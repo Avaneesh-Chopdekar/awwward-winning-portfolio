@@ -1,8 +1,8 @@
 import "./globals.css";
 import { type Metadata } from "next";
 import { Inter } from "next/font/google";
-import { FooterSection } from "@/components/sections";
 import Navbar from "@/components/ui/navbar";
+import Footer from "@/components/ui/footer";
 import Providers from "./providers";
 
 const inter = Inter({
@@ -29,7 +29,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
-          <FooterSection />
+          <Footer />
         </Providers>
       </body>
     </html>

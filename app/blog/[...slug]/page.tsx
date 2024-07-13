@@ -1,10 +1,11 @@
-import MdxComponent from "@/components/mdx-component";
-import { posts } from "@velite/content";
-import { notFound } from "next/navigation";
 import "@/styles/mdx.css";
-import { BiLeftArrowAlt } from "react-icons/bi";
-import Link from "next/link";
 import { Metadata } from "next/types";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { BiLeftArrowAlt } from "react-icons/bi";
+
+import { posts } from "@velite/content";
+import MdxComponent from "../_components/mdx-component";
 
 type BlogDetailProps = {
   params: { slug: string[] };

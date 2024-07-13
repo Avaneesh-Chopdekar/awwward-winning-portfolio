@@ -2,6 +2,7 @@ import "./globals.css";
 import { type Metadata } from "next";
 import { Inter } from "next/font/google";
 import { FooterSection } from "@/components/sections";
+import Navbar from "@/components/ui/navbar";
 import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={`${inter.className} flex min-h-svh w-full flex-col scroll-smooth antialiased`}
       >
         <Providers>
+          <Navbar />
           {children}
           <FooterSection />
         </Providers>

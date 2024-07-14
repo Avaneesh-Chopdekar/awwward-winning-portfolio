@@ -8,15 +8,16 @@ import { QueryPagination } from "./query-pagination";
 import { sortPostsDescendingByDate } from "@/lib/utils";
 import { POSTS_PER_PAGE } from "../page";
 
-export default function BlogList({ currentPage }: { currentPage: number }) {
+export default function BlogList({ currentPage = 1 }: { currentPage: number }) {
   const searchQuery = useAtomValue(blogSearchQueryAtom);
-  const displayPosts = posts.slice(
-    POSTS_PER_PAGE * (currentPage - 1),
-    POSTS_PER_PAGE * currentPage,
-  );
 
   const sortedPosts = sortPostsDescendingByDate(
     posts.filter((post) => post.published),
+  );
+
+  const displayPosts = sortedPosts.slice(
+    POSTS_PER_PAGE * (currentPage - 1),
+    POSTS_PER_PAGE * currentPage,
   );
 
   const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
@@ -31,6 +32,7 @@ export default function BlogList({ currentPage }: { currentPage: number }) {
                 date={post.date}
                 title={post.title}
                 slug={post.slug}
+                image={post.image}
                 description={post.description ?? ""}
               />
             </li>
@@ -57,6 +59,7 @@ export default function BlogList({ currentPage }: { currentPage: number }) {
                   date={post.date}
                   title={post.title}
                   slug={post.slug}
+                  image={post.image}
                   description={post.description ?? ""}
                 />
               </li>

@@ -1,4 +1,4 @@
-import { SocialsLinkType } from "@/components/sections/FooterSection";
+import { SocialsLinkType } from "@/components/ui/footer";
 import { SiGithub, SiLinkedin, SiX, SiYoutube } from "react-icons/si";
 
 export const socials: SocialsLinkType[] = [

@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "info": "Avaneesh Chopdekar",
+    "description": "I am a fullstack developer. I love creating software that tackles real-world problems and makes a difference."
+  },
+  {
+    "id": 2,
+    "info": "Education",
+    "description": "I am currently pursuing Bachelor's in Computer Applications from Tilak Maharashtra Vidyapeeth"
+  },
+  {
+    "id": 3,
+    "info": "Projects",
+    "description": "I like to code for fun and you can view my projects from my github. https://github.com/Avaneesh-Chopdekar?tab=repositories"
+  },
+  {
+    "id": 4,
+    "info": "Github",
+    "description": "My github profile is https://github.com/Avaneesh-Chopdekar"
+  },
+  {
+    "id": 5,
+    "info": "Linkedin",
+    "description": "My linkedin profile is https://www.linkedin.com/in/avaneesh-chopdekar"
+  },
+  {
+    "id": 6,
+    "info": "Twitter",
+    "description": "My twitter profile is https://x.com/HelloAvaneesh"
+  },
+  {
+    "id": 7,
+    "info": "Youtube",
+    "description": "My youtube channel is https://www.youtube.com/@avaneeshc"
+  },
+  {
+    "id": 8,
+    "info": "Resume",
+    "description": "You can view my resume from here: https://www.google.com"
+  },
+  {
+    "id": 9,
+    "info": "Location",
+    "description": "I stay in Mumbai, India. I cannot give my exact address for privacy reasons."
+  },
+  {
+    "id": 10,
+    "info": "Blog",
+    "description": "I am not a fulltime blogger, I just do it for fun. I write about programming and productivity. You can access my blog from the menu."
+  }
+]
